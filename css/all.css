@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, #182B66, #1545DA, #4899FF);
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 65px 150px;
+    border-radius: 10px;
+}
+
+section#apresentacao {
+    padding: 24px;
+    font-size: 1.8em;
+    width: 550px;
+}
+
+div#logo {
+    margin-bottom: 80px;
+}
+
+span#ajato {
+    position: absolute;
+    transform: translate(0px, 38px);
+    font-weight: bold;
+}
+
+div#caixa > p {
+    color: rgba(255, 255, 255, 0.655);
+    border: 2px solid rgba(255, 255, 255, 0.455);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: .55em;
+    font-weight: bold;
+    width: 250px;
+}
+
+section#apresentacao > p {
+    font-size: .55em;
+    color: rgba(255, 255, 255, 0.655);
+}
+
+section#forms {
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    padding: 24px;
+    width: 448px;
+    height: 554px;
+}
+
+p#p1 {
+    font-size: .8em;
+    font-weight: bold;
+    color: #1545DA;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: bold
+}
+
+p#p2 {
+    font-size: .9em;
+    color: #1546dabf;
+    margin-bottom: 10px;
+}
+
+div.texto > input {
+    display: block;
+    color: #1546da86;
+    border: 1px solid #1546da57;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    margin: 18px 0px;
+}
+
+div.texto > input [placeholder] {
+    font-size: 6em;
+}
+
+a {
+    text-decoration: none;
+    color: #1545DA;
+    padding-left: 5px;
+}
+
+a:hover {
+    color: #182B66;
+    padding-left: 5px;
+}
+
+div#check {
+    margin: 5px 0px;
+}
+
+div#check > label {
+    cursor: pointer;
+    color: #1546da86;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #1545DA;
+    width: 420px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.655);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    transform: translate(0px, -3px);
+    background-color: #182B66;
+}
+
+p#p3 {
+    color: #1546da86;
+    border-top: 1px solid rgba(0, 0, 0, 0.321);
+    padding-top: 7px;
+    text-align: center;
+}
+
+footer {
+    padding-left: 173px;
+    color: white;
+}

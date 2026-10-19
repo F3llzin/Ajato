@@ -1,0 +1,22 @@
+div > span.material-symbols-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.655);
+    padding: 10px;
+    color: #1546da86;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 20px 0px;
+}
+
+section#forms {
+    margin-top: 150px;
+    height: 350px;
+}
+
+button > a {
+    color: white;
+}
+
+button > a:hover {
+    color: white;
+}
