@@ -12,11 +12,3 @@ section#forms {
     margin-top: 150px;
     height: 300px;
 }
-
-button > a {
-    color: white;
-}
-
-button > a:hover {
-    color: white;
-}

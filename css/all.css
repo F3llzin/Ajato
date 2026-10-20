@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 body {
     background-image: linear-gradient(to bottom, #182B66, #1545DA, #4899FF);
     margin: 0px;
@@ -14,16 +15,20 @@ body {
 main {
     color: white;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 65px 150px;
+    justify-content: space-around;
+    padding: 65px 100px;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
+
 section#apresentacao {
-    padding: 24px;
-    font-size: 1.8em;
+
+    font-size: 1.55em;
     width: 550px;
+    flex-basis: 430px;
+    align-content: center;
+    align-items: center;
 }
 
 div#logo {
@@ -51,12 +56,19 @@ section#apresentacao > p {
     color: rgba(255, 255, 255, 0.655);
 }
 
+div#espaco {
+    flex-basis: 50px;
+    flex-shrink: 1;
+}
+
 section#forms {
     border-radius: 20px;
     color: black;
     background-color: white;
     padding: 24px;
-    width: 448px;
+    flex-basis: 430px;
+    margin-top: 50px;
+    align-content: center;
     height: 554px;
 }
 
@@ -139,4 +151,59 @@ p#p3 {
 footer {
     padding-left: 173px;
     color: white;
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        padding: 15px 12px;
+        flex-wrap: wrap;
+    }
+
+    section#apresentacao {
+        flex-basis: 375px; 
+        font-size: 1.2em;   
+    }
+
+    div#logo {
+        margin-bottom: 20px;
+    }
+
+    div#caixa > p {
+        font-size: .8em;
+        width: 200px;
+    }
+
+    div#espaco {
+        flex-basis: 0px;
+    }
+
+    section#apresentacao > p {
+        font-size: .9em;
+    }
+
+    section#forms {
+        flex-basis: 375px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    main {
+        padding: 0px 0px;
+        flex-flow: column wrap;
+    }
+
+    section#apresentacao{
+        align-items: center;
+        align-self: center;
+    }
+
+    div#espaco {
+        flex-basis: 0px;
+    }
+    
+    section#forms {
+        align-self: center;
+        align-items: center;
+    }
 }
