@@ -42,7 +42,8 @@ span#ajato {
 }
 
 div#caixa > p {
-    color: rgba(255, 255, 255, 0.655);
+    color: white;
+    font-weight: bold;
     border: 2px solid rgba(255, 255, 255, 0.455);
     border-radius: 20px;
     padding: 10px;
@@ -52,8 +53,10 @@ div#caixa > p {
 }
 
 section#apresentacao > p {
-    font-size: .55em;
-    color: rgba(255, 255, 255, 0.655);
+    font-size: .65em;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5em;
 }
 
 div#espaco {
