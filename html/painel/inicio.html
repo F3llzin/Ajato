@@ -17,14 +17,37 @@
             <p id="p1">VISÃO GERAL</p>
             <h1>Painel de Controle</h1>
             <p>Acompanhe os veículos em atendimento</p>
-            <div id="historico">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam non ea laboriosam nemo officiis excepturi nobis. Incidunt impedit cumque assumenda, id, odit minus dolore nemo qui porro corporis dolores obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita enim illo vero necessitatibus itaque laudantium distinctio rerum velit ipsum. Excepturi quidem accusamus beatae eligendi ex quas libero sunt ratione qui! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam repudiandae tempore, consectetur, similique non voluptates eaque dolor atque quia fugiat aperiam adipisci soluta corporis. Minima cum laboriosam quam iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, magnam! Repellendus veritatis aliquam deserunt, repudiandae eveniet perferendis aliquid quidem sequi fugit ab. Nisi, commodi sint molestiae qui possimus laboriosam in!</div>
+            <div id="historico">
+                <div id="pesquisa">
+                    <label for="ipesquisa">
+                        <svg id="pesquisa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -8 24 28" height="24px" width="24px" fill="black"><path d="M19.6,21l-6.3-6.3q-0.75,0.6-1.72,0.95T9.5,16q-2.72,0-4.61-1.89Q3,12.23 3,9.5Q3,6.77 4.89,4.89T9.5,3t4.61,1.89T16,9.5q0,1.1-0.35,2.07T14.7,13.3L21,19.6L19.6,21ZM9.5,14q1.88,0 3.19-1.31T14,9.5T12.69,6.31T9.5,5T6.31,6.31T5,9.5t1.31,3.19T9.5,14Z"/></svg>
+                    </label>
+                    <input type="text" name="pesquisa" id="ipesquisa" placeholder="Pesquisar pela placa">
+                    <svg id="filtro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="black"><path d="M11,20q-0.42,0-0.71-0.29Q10,19.43 10,19V13L4.2,5.6Q3.83,5.1 4.09,4.55T5,4H19q0.65,0 0.91,0.55T19.8,5.6L14,13v6q0,0.43-0.29,0.71T13,20H11Zm1-7.7L16.95,6H7.05L12,12.3Zm0,0Z"/></svg>
+                </div>
+                <div id="detalhes">
+                    <div>
+                        <p id="p-h">Histórico de veículos</p>
+                        <p>Todos os atendimentos</p>
+                    </div>
+                    <p>1 veículo</p>
+                </div>
+                <div class="carros">
+                    <svg  class="carro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="32px" width="32px" fill="black"><path d="M6,19v1q0,0.43-0.29,0.71T5,21H4q-0.42,0-0.71-0.29Q3,20.43 3,20V12L5.1,6Q5.25,5.55 5.64,5.27T6.5,5h11q0.48,0 0.86,0.27T18.9,6L21,12v8q0,0.43-0.29,0.71T20,21H19q-0.43,0-0.71-0.29Q18,20.43 18,20V19H6ZM5.8,10H18.2L17.15,7H6.85L5.8,10ZM5,12v5V12Zm2.5,4q0.63,0 1.06-0.44T9,14.5T8.56,13.44T7.5,13T6.44,13.44T6,14.5t0.44,1.06T7.5,16Zm9,0q0.63,0 1.06-0.44T18,14.5t-0.44-1.06T16.5,13t-1.06,0.44T15,14.5t0.44,1.06T16.5,16ZM5,17H19V12H5v5Z"/></svg>
+                    <div class="informacoes">
+                        <p class="placa">DEF-5678</p>
+                        <p>Toyota Corolla</p>
+                    </div>
+                    <svg class="status-visual" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="yellow"><path d="M15.54,15.54Q17,14.08 17,12q0-2.08-1.46-3.54T12,7Q9.93,7 8.46,8.46T7,12t1.46,3.54T12,17t3.54-1.46ZM12,22q-2.07,0-3.9-0.79q-1.82-0.79-3.17-2.14Q3.58,17.73 2.79,15.9T2,12Q2,9.92 2.79,8.1Q3.58,6.27 4.93,4.93Q6.28,3.57 8.1,2.79Q9.93,2 12,2t3.9,0.79t3.17,2.14q1.35,1.35 2.14,3.17Q22,9.92 22,12t-0.79,3.9t-2.14,3.17q-1.35,1.35-3.17,2.14T12,22Zm0-2q3.35,0 5.68-2.32T20,12T17.68,6.32T12,4T6.33,6.32T4,12t2.33,5.68T12,20Z"/></svg>
+                </div>
+            </div>
         </div>
         <div></div>
     </main>
     <footer>
         <nav>
-            <a href="" id="nao-clicavel">Ínicio</a>
-            <a href="servicos.html" class="clicavel">Serviços</a>
+            <a href="" id="nao-clicavel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 24 24" height="26px" width="24px" fill="#e3e3e3"><path d="M6,19H9V13h6v6h3V10L12,5.5L6,10v9ZM4,21V9l8-6l8,6V21H13V15H11v6H4Zm8-8.75Z"/></svg>Ínicio</a>
+            <a href="servicos.html" class="clicavel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -6 24 24" height="24px" width="20px" fill="#1545DA"><path d="M5,21q-0.83,0-1.41-0.59T3,19V5Q3,4.17 3.59,3.59T5,3H9.2q0.32-0.9 1.09-1.45T12,1t1.71,0.55T14.8,3H19q0.83,0 1.41,0.59T21,5V19q0,0.82-0.59,1.41T19,21H5Zm0-2H19V5H5V19Zm2-2h7V15H7v2Zm0-4H17V11H7v2ZM7,9H17V7H7V9Zm5.54-4.96q0.21-0.21 0.21-0.54q0-0.33-0.21-0.54T12,2.75T11.46,2.96T11.25,3.5q0,0.32 0.21,0.54T12,4.25t0.54-0.21ZM5,19V5V19Z"/></svg>Serviços</a>
         </nav>
     </footer>
 </body>

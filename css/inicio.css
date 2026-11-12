@@ -47,9 +47,112 @@ main > div > p {
 }
 
 main > div > div#historico {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.379);
     border-radius: 10px;
     padding: 10px;
+}
+
+div#historico > div#pesquisa > input {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #d9e7fca3;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+    text-indent: 15px;
+}
+
+div#historico > div#pesquisa > svg#filtro-icon {
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+    background-color: #d9e7fca3;
+
+    
+    transform: translate(14%, 40%);
+}
+
+div#historico > div#pesquisa > svg#filtro-icon:hover {
+    background-color: #d9e7fc;
+}
+
+div#historico > div#detalhes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+div#detalhes > div {
+    display: flex;
+    flex-direction: column;
+}
+
+div#detalhes > div > p {
+    color: #1545DA;
+    text-align: left;
+}
+
+div#detalhes > div > #p-h {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+}
+
+div#detalhes > p {
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: #d9e7fca3;
+
+    color: #1545DA;
+    font-weight: bold;
+    font-size: .85em;
+}
+
+div#historico > div.carros {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+    padding: 10px;
+    
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+
+}
+
+div#historico > div.carros:hover {
+    box-shadow: 0px 3px 3px rgba(128, 128, 128, 0.379);
+    transform: translate(0px, -3px);
+
+    transition: transform .3s;
+}
+
+div.carros > svg.carro {
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: #d9e7fca3;
+}
+
+div.carros > div.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.placa {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.status-visual {
+    padding-top: 15px;
 }
 
 footer {
@@ -69,22 +172,28 @@ footer nav {
     flex-basis: 90vw;
     gap: 20px;
     display: flex;
+    justify-content: center;
 }
 
 footer a {
-    background-color: #1545DA;
+    background-color: rgba(128, 128, 128, 0.150);
     text-decoration: none;
     text-align: center;
     
 
-    color: white;
-    padding: 20px;
+    color: #1545DA;
+    padding: 10px 20px;
     border-radius: 10px;
     flex-basis: 200px;
 }
 
+footer a#nao-clicavel {
+    background-color: #1545DA;
+    color: white;
+}
+
 footer a.clicavel:hover {
-    background-color: rgba(128, 128, 128, 0.150);
+    background-color: rgba(128, 128, 128, 0.500);
     color: #1545DA;
 }
 
@@ -100,13 +209,10 @@ footer a.clicavel:hover {
 }
 
 @media screen and (min-width: 768px) {
-    footer {
-        position: sticky;
-        bottom: -2100px;
-        z-index: 1;
-    }
 
-    main {
-        grid-template-columns: 1fr 3fr 1fr;
+    body {
+        display: grid;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-auto-flow: column;
     }
 }
