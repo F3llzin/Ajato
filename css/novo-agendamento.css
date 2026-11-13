@@ -265,3 +265,236 @@ footer a.clicavel:hover {
         transition: opacity .3s;
     }
 }
+/* ============================================================
+   FORMULARIOS DE NOVO AGENDAMENTO (CPF / CNPJ)
+   Seguem a linguagem visual do CSS original do Ajato.
+   Nenhuma regra original de cabecalho, rodape ou historico muda.
+   ============================================================ */
+
+.agendamento-formulario,
+.agendamento-formulario * {
+    box-sizing: border-box;
+}
+
+/* Apenas a area do formulario recebe a organizacao em cartao.
+   A borda, a sombra e o arredondamento seguem #historico. */
+#historico {
+    background-color: transparent;
+    padding: 20px;
+}
+
+#historico > .agendamento-formulario {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+}
+
+.agendamento-formulario .formulario-rotulo,
+.agendamento-formulario .formulario-campo > label:not(.formulario-whatsapp),
+.agendamento-formulario .formulario-legenda {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.agendamento-formulario .formulario-rotulo {
+    margin-bottom: 10px;
+}
+
+/* Mesma dupla de cores, bordas e raio dos botoes originais. */
+.agendamento-formulario #tipo-cadastro {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0 0 20px;
+}
+
+.agendamento-formulario #tipo-cadastro > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.150);
+    color: #1545DA;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.agendamento-formulario #tipo-cadastro > a.nao-clicavel {
+    background-color: #1545DA;
+    color: white;
+}
+
+.agendamento-formulario #tipo-cadastro > a.clicavel:hover {
+    background-color: rgba(128, 128, 128, 0.500);
+    color: #1545DA;
+}
+
+/* A disposicao em duas colunas e a mesma da versao aprovada. */
+.agendamento-formulario .formulario-grade {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.agendamento-formulario .formulario-campo > label:not(.formulario-whatsapp) {
+    margin-bottom: 8px;
+}
+
+/* Campos inspirados no input de pesquisa da tela Servicos. */
+.agendamento-formulario .formulario-campo > input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    background-color: #d9e7fca3;
+    color: black;
+    font: inherit;
+    outline-offset: 2px;
+}
+
+.agendamento-formulario .formulario-campo > input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+.agendamento-formulario .formulario-campo > input:focus-visible {
+    outline: 2px solid #1545DA;
+}
+
+.agendamento-formulario .formulario-campo > input[type="date"] {
+    color-scheme: light;
+}
+
+.agendamento-formulario .formulario-campo > label.formulario-whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: #1545DA;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.agendamento-formulario input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: #1545DA;
+    cursor: pointer;
+}
+
+.agendamento-formulario .formulario-divisoria {
+    height: 1px;
+    margin: 20px 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+.agendamento-formulario .formulario-titulo-secao {
+    margin: 0 0 15px;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.agendamento-formulario .formulario-lavagens {
+    margin-top: 20px;
+}
+
+.agendamento-formulario .formulario-legenda {
+    margin-bottom: 10px;
+}
+
+.agendamento-formulario .formulario-opcoes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.agendamento-formulario .formulario-opcao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.150);
+    color: #1545DA;
+    cursor: pointer;
+}
+
+.agendamento-formulario .formulario-adicional {
+    margin-top: 20px;
+}
+
+/* Botao com o mesmo azul e o mesmo raio de Novo agendamento. */
+.agendamento-formulario .formulario-enviar {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 28px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #1545DA;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.agendamento-formulario .formulario-enviar:hover {
+    background-color: #182B66;
+}
+
+#historico > #detalhes {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    #historico {
+        padding: 15px;
+    }
+
+    #historico > .agendamento-formulario {
+        padding: 0 0 15px;
+    }
+
+    .agendamento-formulario .formulario-grade,
+    .agendamento-formulario .formulario-opcoes {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .agendamento-formulario #tipo-cadastro > a {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* O grid original usa 1fr 10fr 1fr no desktop. Em paginas
+   compridas isso distorce a altura das barras brancas. Este ajuste
+   e restrito aos agendamentos e mantem as barras nos 95px originais
+   sem alterar o CSS dos proprios elementos header/footer. */
+@media screen and (min-width: 768px) {
+    body:has(.agendamento-formulario) {
+        grid-template-rows: 95px minmax(0px, auto) 95px;
+    }
+}
